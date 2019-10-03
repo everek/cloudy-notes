@@ -63,8 +63,6 @@ function App({ authState }) {
         }
       >
         {({ data, loading, error }) => {
-          console.log(authState);
-          
           if (loading) return 'loading...'
           if (error) return error.message
           return (
